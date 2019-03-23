@@ -1,0 +1,110 @@
+/* SOMETHING ABOUT ME */
+p {
+    font-size: 49px;
+    text-align: center;
+    padding: 100px;
+    color: rgb(32, 78, 95);
+    background-color: #B7D7D8;
+    height: 270px;
+    margin: -10px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  /*NAVIGATION BAR*/
+  ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    font-family: "Raleway", sans-serif;
+  }
+
+  a {
+      text-decoration: none;
+  }
+  
+  .logo {
+      margin: 0;
+      font-size: 24px;
+     font-family: "Petit Formal Script", cursive;
+  }
+  
+  .main-nav {
+      margin-top: 5px;
+  
+  }
+  .logo a,
+  .main-nav a {
+      padding: 10px 15px;
+      text-align: center;
+      display: block;
+      color: #34495e;
+  }
+  
+  .main-nav a:hover {
+      color: #718daa;
+  }
+  .header {
+    background-color: #f4f4f4;
+    margin: -10px;
+    padding: 10px;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  
+  /* ================================= 
+    Media Queries
+  ==================================== */
+  @media (min-width: 769px) {
+      .header,
+      .main-nav {
+          display: flex;
+      }
+      .header {
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          margin: -10 auto;
+          max-width: 2550px;
+      }
+  }
+  
+  @media (min-width: 1025px) {
+      .header {
+          flex-direction: row;
+          justify-content: space-between;
+      }
+  
+  }
+  
+  /*PORTFOLIO*/
+  .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .flex-container > div {
+    background-color: rgb(255, 137, 132);
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    width: calc(33.3333%, 33.3333%, 33.3333%);
+  }
+.flex-container img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.flex-container:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
