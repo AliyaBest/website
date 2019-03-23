@@ -1,11 +1,11 @@
 /* SOMETHING ABOUT ME */
 p {
-    font-size: 49px;
+    font-size: 54px;
     text-align: center;
-    padding: 100px;
+    padding: 200px;
     color: rgb(32, 78, 95);
     background-color: #B7D7D8;
-    height: 270px;
+    height: 350px;
     margin: -10px;
     font-family: "Raleway", sans-serif;
   }
@@ -16,6 +16,7 @@ p {
     padding: 10px;
     list-style: none;
     font-family: "Raleway", sans-serif;
+    font-size: 20px;
   }
 
   a {
@@ -24,14 +25,14 @@ p {
   
   .logo {
       margin: 0;
-      font-size: 24px;
+      font-size: 32px;
      font-family: "Petit Formal Script", cursive;
   }
   
   .main-nav {
       margin-top: 5px;
-  
   }
+
   .logo a,
   .main-nav a {
       padding: 10px 15px;
@@ -41,7 +42,7 @@ p {
   }
   
   .main-nav a:hover {
-      color: #718daa;
+      color: rgb(255, 137, 132);
   }
   .header {
     background-color: #f4f4f4;
@@ -53,6 +54,7 @@ p {
     position: -o-sticky;
     position: sticky;
     top: 0;
+    z-index: 9999;
   }
   
   
@@ -88,7 +90,7 @@ p {
     justify-content: center;
     margin-top: 16px;
   }
-  .flex-container > div {
+  .flex-container > div{
     background-color: rgb(255, 137, 132);
     width: 350px;
     height: 350px;
@@ -102,7 +104,10 @@ p {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .1s ease-in-out;
-	transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
 }
 .flex-container:hover img {
 	-webkit-filter: grayscale(0);
