@@ -24,13 +24,15 @@ p {
   }
   
   .logo {
-      margin: 0;
-      font-size: 32px;
+    margin: 0;
+      font-size: 36px;
      font-family: "Petit Formal Script", cursive;
+     margin-left: 150px;
   }
   
   .main-nav {
       margin-top: 5px;
+      margin-right: 150px;
   }
 
   .logo a,
@@ -39,7 +41,7 @@ p {
       text-align: center;
       display: block;
       color: #34495e;
-  }
+      }
   
   .main-nav a:hover {
       color: rgb(255, 137, 132);
@@ -66,7 +68,7 @@ p {
       .main-nav {
           display: flex;
       }
-      .header {
+      .header{
           flex-direction: row;
           align-items: center;
           width: 100%;
@@ -88,28 +90,55 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 30px;
   }
   .flex-container > div{
-    background-color: rgb(255, 137, 132);
-    width: 350px;
-    height: 350px;
+    background-color: rgb(0, 0, 0);
+    width: 450px;
+    height: 450px;
     margin: 10px;
-    text-align: center;
     line-height: 75px;
     font-size: 30px;
-    width: calc(33.3333%, 33.3333%, 33.3333%);
+    width: calc(33.3333%, 33.3333%, 33.3333%);    
   }
-.flex-container img {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-  object-fit: cover;
-  width: 350px;
-  height: 350px;
-}
-.flex-container:hover img {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-}
+
+  .boxes {
+    position: relative;
+    width: 50%;
+  }
+
+ .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .boxes:hover .overlay {
+    opacity: .75;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
