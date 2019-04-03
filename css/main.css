@@ -1,10 +1,59 @@
+/*MODAL*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; 
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+   background-color: #f8f9f9;
+   margin: 5% auto;
+   padding: 20px;
+   width: 1200px;
+   height: 800px;
+   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 5px 8px 0 rgba(0, 7, 20, 0.17);
+    animation-name:modalopen;
+    animation-duration:1s;
+} 
+.modal-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+}
+.modal-content text {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+ .closeBtn{
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+ }
+
+ .closeBtn:hover, .closeBtn:focus{
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ @keyframes modalopen{
+   from{ opacity: 0}
+   to {opacity:1}
+ }
 /* SOMETHING ABOUT ME */
 p {
     font-size: 56px;
     text-align: center;
     padding: 150px;
     color: rgb(32, 78, 95);
-    background-color: #B7D7D8;
+    background-color: #C9ECED; /* #B7D7D8;*/
     height: 250px;
     margin: -10px;
     font-family: "Raleway", sans-serif;
@@ -47,7 +96,7 @@ p {
       color: rgb(255, 137, 132);
   }
   .header {
-    background-color: #f4f4f4;
+    background-color: white;
     margin: -10px;
     padding: 10px;
     position: -webkit-sticky;
@@ -56,7 +105,7 @@ p {
     position: -o-sticky;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 999;
   }
   
   
@@ -99,7 +148,7 @@ p {
     margin: 10px;
     line-height: 75px;
     font-size: 30px;
-    width: calc(33.3333%, 33.3333%, 33.3333%);    
+    width: calc(33.3333%, 33.3333%, 33.3333%);
   }
 
   .boxes {
@@ -141,4 +190,9 @@ p {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: "Raleway", sans-serif;
+  }
+
+  body {
+    background-color: #EFEEEE; /* #ECEDED;*/
   }
