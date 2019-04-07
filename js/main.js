@@ -1,12 +1,12 @@
 //Get modal element
 var modal = document.getElementById('portfolioModal');
 // Get open modal button
-var boxes = document.getElementsByClassName('boxes')[0];
+var flexcontainer = document.getElementsByClassName('flex-container')[0];
 //Get close button
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
 // Listen for open click
-boxes.addEventListener('click', openModal);
+flexcontainer.addEventListener('click', openModal);
 // Listen for close click
 closeBtn.addEventListener('click', closeModal);
 // Listen for outside click
