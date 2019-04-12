@@ -2,81 +2,106 @@
 <html>
 
 <head>
-   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="CSS/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|Raleway:100,200,300,400,500" rel="stylesheet">
 </head>
 <body>
-<!-- Modal 
-<div id="portfolioModal" class="modal">
-  <div class="modal-content">
-    <span class="closeBtn">&times;</span>
-    <img src="img/fb8b3.jpg" alt="Dinosaur">
-    <hr>
-    <text>Steidldangin presents the monograph of Glen Luchford, whose artistic production came to maturity in the period.</text>
-  </div>
-</div> -->
+
 
 <!-- SOMETHING ABOUT ME -->
-
-  <div class="intro">
+<div class="intro">
       <h1>Aliya Best</h1>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-        Porta lorem mollis aliquam ut. Nulla at volutpat diam ut <br>
-        venenatis tellus in metus vulputate.</h2>
+      <h2>I'm a budding UX Designer and Developer with Graphic and <br>
+        Production Design experience living and learning in NYC.</h2>
       </div>
 
 <!-- NAVIGATION BAR -->
   <header class="header">
-    <!-- <h1 class="logo">
-      <a href="#">Aliya Best</a></h1> -->
     <ul class="main-nav">
-      <!-- <li><a href="#">WORK</a></li> -->
-      <li><a href="#">RESUME</a></li>
-      <li><a href="#" class="fa fa-github"></a></li>
-      <li><a href="#" class="fa fa-linkedin"></a></li>
-      <li><a href="#" class="fa fa-envelope"></a></li>
+      <li><a href="https://github.com/AliyaBest" class="fa fa-github"></a></li>
+      <li><a href="https://www.linkedin.com/in/aliya-best/" class="fa fa-linkedin"></a></li>
+      <li><a href="mailto:aliya@aliyabest.com" class="fa fa-envelope"></a></li>
+      <li style="float:right"><a href="#target">RESUME</a></li>
             </a>
     </ul>
     
   </header>
 
+<!-- SECTION TITLE -->
+
+<h3>DESIGN</h3>
+<hr>
+
 <!-- PORTFOLIO -->
 <div class="flex-container">
     <div class="column">
-      <img src="img/patrickcover_small.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-      <div class="text">Glen Luchford</div>
+      <img src="img/patrickcover_small.jpg">
+      <div class="overlay" onclick="openModal();currentSlide(1)">
+      <div class="text">Patrick Demarchelier</div></div>
     </div>
+
     <div class="column">
-      <img src="img/luchfordcover_small.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      <img src="img/luchfordcover_small.jpg">
+      <div class="overlay" onclick="openModal();currentSlide(2)">
+          <div class="text">Glen Luchford</div></div>
     </div>
+
     <div class="column">
-      <img src="img/bourdincover_small.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      <img src="img/bourdincover_small.jpg">
+      <div class="overlay" onclick="openModal();currentSlide(3)">
+          <div class="text">Guy Bourdin: In Between</div></div>
     </div>
+
     <div class="column">
-      <img src="img/keitacover_small.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+      <img src="img/keitacover_small.jpg">
+      <div class="overlay" onclick="openModal();currentSlide(4)">
+          <div class="text">Seydou Keita: Photographs, Bamako, Mali 1948-1963</div></div>
     </div>
+
     <div class="column">
-        <img src="img/iyengar_small.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        <img src="img/iyengar_small.jpg">
+        <div class="overlay" onclick="openModal();currentSlide(5)">
+            <div class="text">Iyengar Yoga Institute of New York</div></div>
       </div>
+
     <div class="column">
-          <img src="img/budhisingle_small.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          <img src="img/budhisingle_small.jpg">
+          <div class="overlay" onclick="openModal();currentSlide(6)">
+              <div class="text">Budhi Teencare</div></div>
         </div>
+
     <div class="column">
-          <img src="img/antiquorum_small.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          <img src="img/antiquorum_small.jpg">
+          <div class="overlay" onclick="openModal();currentSlide(7)">
+              <div class="text">Antiquorum</div></div>
           </div>
+
     <div class="column">
-          <img src="img/modells01_small.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          <img src="img/modells01_small.jpg">
+          <div class="overlay" onclick="openModal();currentSlide(8)">
+              <div class="text">Modell's Sporting Goods</div></div>
         </div>
+</div>
+        <h3>PRODUCTION</h3>
+        <hr>
+        <div class="flex-container">
     <div class="column">
-          <img src="img/thefadercover_small.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
-    </div><div class="column">
-          <img src="img/mentalfloss_small.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+          <img src="img/thefadercover_small.jpg">
+          <div class="overlay" onclick="openModal();currentSlide(9)">
+              <div class="text">The FADER Magazine</div></div>
+    </div>
+    
+    <div class="column">
+          <img src="img/mentalfloss_small.jpg">
+          <div class="overlay" onclick="openModal();currentSlide(10)">
+              <div class="text">Mental Floss</div></div>
           </div>
+
     <div class="column">
-          <img src="img/artnews_small.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+          <img src="img/artnews_small.jpg">
+          <div class="overlay" onclick="openModal();currentSlide(11)">
+              <div class="text">ARTnews</div></div>
           </div>
   </div>
   
@@ -88,176 +113,105 @@
       </div>
    
       <div class="mySlides">
-        <!-- <div class="numbertext">1 / 4</div> -->
-        <img src="img/patrickcover.jpg" style="width:100%">
-        <text>Patrick Demarchelier</text>
+        <!-- <div class="numbertext">1</div> -->
+        <img src="img/patrickcover.jpg">
+        <text>This monograph is the definitive guide to the career of one of 
+          the most prodigious fashion photographers of our time. Published to 
+          coincide with the exhibition Patrick Demarchelier: Images et Mode à Paris 
+          at the Petit Palais, Paris, and featuring more than 400 of Demarchelier's 
+          most telling photographs.</text>
+          <img src="img/patrickspread.jpg">
       </div>
   
       <div class="mySlides">
-        <!-- <div class="numbertext">2 / 4</div> -->
-        <img src="img/luchfordcover.jpg" style="width:100%">
+        <!-- <div class="numbertext">2</div> -->
+        <img src="img/luchfordcover.jpg">
+        <text>Part of Steidldangin's new British Influence series, this monograph 
+          presents 80 photographs from the past two decades, beginning with Luchford's 
+          earliest images, which prefigure the gritty, found-light aesthetic that defined 
+          the first half of the 1990s, from the quiet black-and-white portraits of musical 
+          icons such as Ian Brown, to more aggressive street shots of Kate Moss that catch 
+          the spirit of a seedy New York en route to gentrification. This monograph presents 
+          works in a range of media, from 35 mm black-and-white to 8 x 10, to digital formats, 
+          and features an interview with Luchford's long-time friend and artistic collaborator, 
+          painter Jenny Saville.</text>
+        <img src="img/luchfordspread.jpg">
       </div>
   
       <div class="mySlides">
-        <!-- <div class="numbertext">3 / 4</div> -->
-        <img src="img/bourdincover.jpg" style="width:100%">
+        <!-- <div class="numbertext">3</div> -->
+        <img src="img/bourdincover.jpg">
+        <text>In Between delves into Bourdin's career, charting the course of his artistic 
+          development from the 1950s to the 1980s via over 200 superbly printed black-and-white 
+          and color images. It also reassembles many original editorial layouts as they were 
+          first published, in magazines such as French Vogue, British Vogue and Harper's Bazaar, 
+          offering a new critical contexts for approaching his work-for Bourdin tailored his 
+          compositions to the constraints of the printed page, both conceptually and graphically, 
+          and the mirror motif famously central to his work finds its formal counterpart in the 
+          magazine spread.</text>
+        <img src="img/bourdinspread.jpg">
       </div>
   
       <div class="mySlides">
-        <!-- <div class="numbertext">4 / 11</div> -->
-        <img src="img/keitacover.jpg" style="width:100%">
+        <!-- <div class="numbertext">4</div> -->
+        <img src="img/keitacoverone.jpg">
+        <text>Photographs, Bamako, Mali 1949-1970 draws on an expanded archive to offer over 
+          400 portraits, mostly unpublished, from the height of the photographer's productivity 
+          in downtown Bamako. Providing lushly patterned backdrops and props that now serve to 
+          date distinct periods in his career, the artist often styled his subjects but also 
+          encouraged their active participation, hanging sample portraits around the studio as 
+          inspiration. Migratory youth, government officials, shop owners and Bamako's cultural 
+          elite all make appearances here, and while Keïta's photographs served as both family 
+          record and cultural status symbol for the clients who commissioned them, these images 
+          have become a lasting visual record of Mali at that time.</text>
+        <img src="img/keitalimited.jpg"><img src="img/keitaspread01.jpg">
       </div>
 
       <div class="mySlides">
-          <!-- <div class="numbertext">5 / 4</div> -->
-          <img src="img/iyengar.jpg" style="width:100%">
+          <!-- <div class="numbertext">5</div> -->
+          <img src="img/iyengarone.jpg">
         </div>
      
       <div class="mySlides">
-          <!-- <div class="numbertext">6 / 4</div> -->
-          <img src="img/budhisingle.jpg" style="width:100%">
+          <!-- <div class="numbertext">6</div> -->
+          <img src="img/budhisingle.jpg"><img src="img/budhiline.jpg">
         </div>  
           
         <div class="mySlides">
-            <!-- <div class="numbertext">7 / 4</div> -->
-            <img src="img/antiquorum01.jpg" style="width:100%">
+            <!-- <div class="numbertext">7</div> -->
+            <img src="img/antiquorum01one.jpg">
           </div>  
           
       <div class="mySlides">
-            <!-- <div class="numbertext">8 / 4</div> -->
-            <img src="img/modells01.jpg" style="width:100%">
+            <!-- <div class="numbertext">8</div> -->
+            <img src="img/modells01one.jpg">
           </div>         
           
       <div class="mySlides">
-            <!-- <div class="numbertext">9 / 4</div> -->
-            <img src="img/thefadercover.jpg" style="width:100%">
+            <!-- <div class="numbertext">9</div> -->
+            <img src="img/thefadercoverfront.jpg">
           </div>
 
      <div class="mySlides">
-            <!-- <div class="numbertext">10 / 4</div> -->
-            <img src="img/mentalfloss.jpg" style="width:100%">
+            <!-- <div class="numbertext">10</div> -->
+            <img src="img/mentalfloss.jpg">
           </div>        
           
      <div class="mySlides">
-           <!-- <div class="numbertext">11 / 4</div> -->
-            <img src="img/artnews.jpg" style="width:100%">
+           <!-- <div class="numbertext">11</div> -->
+            <img src="img/artnews.jpg">
             </div>      
 
       <!-- Next/previous controls -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-      <!-- Caption text -->
-      <!-- <div class="caption-container">
-        <p id="caption"></p> -->
+
       </div> 
-  
-      <!-- Thumbnail image controls -->
-      <!-- <div class="column">
-        <img class="demo" src="img/patrickcover_small.jpg" onclick="currentSlide(1)" alt="Nature">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="img/luchfordcover_small.jpg" onclick="currentSlide(2)" alt="Snow">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="img/bourdincover_small.jpg" onclick="currentSlide(3)" alt="Mountains">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="img/keitacover_small.jpg" onclick="currentSlide(4)" alt="Lights">
-      </div>
-      <div class="column">
-          <img class="demo" src="img/iyengar.jpg" onclick="currentSlide(5)" alt="Lights">
-        </div>
-      <div class="column">
-          <img class="demo" src="img/budhisingle.jpg" onclick="currentSlide(6)" alt="Lights">
-        </div>
-      <div class="column">
-          <img class="demo" src="img/antiquorum_small.jpg" onclick="currentSlide(7)" alt="Lights">
-          </div> 
-      <div class="column">
-          <img class="demo" src="img/modells01.jpg" onclick="currentSlide(8)" alt="Lights">
-          </div>
-      <div class="column">
-          <img class="demo" src="img/thefadercover.jpg" onclick="currentSlide(9)" alt="Lights">
-          </div>
-      <div class="column">
-          <img class="demo" src="img/mentalfloss.jpg" onclick="currentSlide(10)" alt="Lights">
-        </div>
-      <div class="column">
-        <img class="demo" src="img/artnews_small.jpg" onclick="currentSlide(11)" alt="Lights">
-        </div>                       -->
+    
   </div>
 
-  <!-- PORTFOLIO 
-  <div class="flex-container">
-    <div class="boxes">
-      <img src="img/fb8b3.jpg" alt="Dinosaur" class="image">
-      <div class="overlay">
-      <div class="text">Hello World</div></div>
-  </div>
-    <div class="boxes">
-      <img src="img/patrickcover.jpg" alt="Woman in hat" class="image">
-      <div class="overlay">
-        <div class="text">Patrick Demarchelier<br>Graphic Design</div>
-      </div>
-    </div>
-    <div class="boxes">
-        <img src="img/luchfordcover.jpg" alt="Legs" class="image">
-        <div class="overlay">
-          <div class="text">Glen Luchford</div>
-        </div>
-      </div>
-    <div class="boxes">
-        <img src="img/bourdincover.jpg" alt="Red Fingernails" class="image">
-        <div class="overlay">
-        <div class="text">Guy Bourdin</div></div>
-    </div>
-    <div class="boxes">
-        <img src="img/keitacover.jpg" alt="Print" class="image">
-        <div class="overlay">
-        <div class="text">Seydou Keita</div></div>
-    </div>
-    <div class="boxes">
-        <img src="img/budhisingle.jpg" alt="Print" class="image">
-        <div class="overlay">
-        <div class="text">Budhi Teencare</div></div>
-    </div>
-    <div class="boxes">
-        <img src="img/antiquorum01.jpg" alt="Watch" class="image">
-        <div class="overlay">
-        <div class="text">ANTIQUORUM</div></div>
-    </div>
-     <div class="boxes">
-        <img src="img/iyengar.jpg" alt="Blue Sky" class="image">
-        <div class="overlay">
-        <div class="text">IYENGAR YOGA ASSOCIATION OF GREATER NEW YORK</div></div>
-    </div>
-     <div class="boxes">
-        <img src="img/modells01.jpg" alt="Boots" class="image">
-        <div class="overlay">
-        <div class="text">Modell's</div></div>
-    </div>
-         <div class="boxes">
-            <img src="img/artnews.jpg" alt="Collage" class="image">
-            <div class="overlay">
-            <div class="text">ARTnews</div></div>
-        </div>
-        <div class="boxes">
-            <img src="img/thefadercover.jpg" alt="Miles Davis" class="image">
-            <div class="overlay">
-            <div class="text">The FADER</div></div>
-        </div>
-        <div class="boxes">
-            <img src="img/mentalfloss.jpg" alt="Television" class="image">
-            <div class="overlay">
-            <div class="text">Mental Floss</div></div>
-        </div>
-  </div> -->
-
-<div class="resume">
+  
+<div class="resume"><a name="target"></a>
 <img src="img/aliyaresume_webtemp.jpg">
 </div>
 
