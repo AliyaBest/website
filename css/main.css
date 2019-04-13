@@ -1,50 +1,3 @@
-/* .row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
-/* Create four equal columns that floats next to eachother
-.column {
-  float: left;
-  width: 25%;
-} */
-
-/* The Modal (background) */
-/* .modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding-top: 100px;
-  left: 0; 
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-} */
-
-/* Modal Content */
-/* .modal-content {
-  position: relative;
-  background-color: #f8f9f9;
-  margin: 5% auto;
-  padding: 20px;
-  width: 90%;
- max-width: 1200px;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 5px 8px 0 rgba(0, 7, 20, 0.17);
-   animation-name: modalopen;
-   animation-duration:1s;
-} 
-@keyframes modalopen{
- from{ opacity: 0}
- to {opacity:1}
-}  */
-
 
 hr { 
   display: block;
@@ -124,39 +77,6 @@ hr {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc)
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-} */
-
-/* Caption text */
-/* .caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-} */
-
-/* img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-} */
-
-/* img.hover-shadow {
-  transition: 0.3s;
-} */
-
-/* .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
 /* MODAL */
 .modal {
   display: none;
@@ -198,97 +118,12 @@ height: auto;
   position: relative;
 }
 
-.modal-content text {
+.caption {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
-}
-
-.modal-content .mySlides {
-  padding: 20px;
-}
-
- /* .closeBtn{
-  color: #ccc;
-  float: right;
-  font-size: 30px;
- 
- .close {
-   position: absolute;
-  color: #ccc;
-  top: 10px;
-  right: 25px;
-  font-size: 30px;
- } */
-
- /* .closeBtn:hover, .closeBtn:focus{
-   color: #000;
-   text-decoration: none;
-   cursor: pointer;
- } */
-
- /* .close:hover, .close:focus{
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-} */
-/* Hide the slides by default */
-/* .mySlides {
-  display: 1;
-} */
-
-/* Next & previous buttons */
-/* .prev, 
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-} */
-
-/* Position the "next button" to the right */
-/* .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-} */
-
-/* On hover, add a black background color with a little bit see-through */
-/* .prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-} */
-
-
-/* Caption text */
-/* .caption-container {
+  padding: 50px;
   text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-} */
-
-/* .active,
-.demo:hover {
-  opacity: 1;
-} */
-
-/* img.hover-shadow {
-  transition: 0.3s;
-} */
-
-/* .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */ 
-
- 
+}
 
 /* SOMETHING ABOUT ME */
 .intro {
@@ -328,13 +163,6 @@ height: auto;
   a {
       text-decoration: none;
   }
-  
-  /* .logo {
-    margin: 0;
-      font-size: 36px;
-     font-family: "Petit Formal Script", cursive;
-     margin-left: 150px;
-  } */
 
   .fa {
     padding: 10px;
@@ -345,8 +173,8 @@ height: auto;
   
   .main-nav {
       margin-top: 5px;
-      margin-left: 120px;
-      margin-right: 120px;
+      margin-left: 80px;
+      margin-right: 80px;
       padding: 0;  
       overflow: hidden;
     }
@@ -480,7 +308,7 @@ h3{
   }
   
   body {
-    background-color: #EFEEEE; /* #ECEDED;*/
+    background-color: #EFEEEE; 
   }
 
   .about {
